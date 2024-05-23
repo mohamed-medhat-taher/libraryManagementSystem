@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1220.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarysystem.LoginPageController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="410.0" prefWidth="331.0" style="-fx-background-color: #212121;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="331.0">
+               <children>
+                  <AnchorPane layoutY="-7.0" prefHeight="410.0" prefWidth="331.0" style="-fx-background-color: #212121;">
+                     <children>
+                        <Label layoutX="116.0" layoutY="74.0" prefHeight="51.0" prefWidth="119.0" text="Login" textFill="WHITE">
+                           <font>
+                              <Font name="Tahoma Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="124.0" layoutY="131.0" prefHeight="6.0" prefWidth="80.0" style="-fx-background-color: #76ff03;" />
+                        <TextField fx:id="userName" layoutX="52.0" layoutY="169.0" prefHeight="26.0" prefWidth="224.0" promptText="Username" />
+                        <PasswordField fx:id="password" layoutX="52.0" layoutY="218.0" prefHeight="26.0" prefWidth="224.0" promptText="Password" />
+                        <Button layoutX="85.0" layoutY="283.0" mnemonicParsing="false" onAction="#loginFun" prefHeight="51.0" prefWidth="167.0" style="-fx-background-color: #76ff03; -fx-background-radius: 90;" text="Login" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="134.0" layoutY="14.0">
+                           <image>
+                              <Image url="@../assets/galala.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="15.0" layoutY="216.0">
+                           <image>
+                              <Image url="@../assets/icons8-password-40.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="15.0" layoutY="167.0">
+                           <image>
+                              <Image url="@../assets/user.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="errormessage" layoutX="78.0" layoutY="350.0" prefHeight="26.0" prefWidth="195.0" textFill="RED">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

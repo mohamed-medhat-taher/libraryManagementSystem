@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarysystem.AddLibrarianPagController">
+   <children>
+      <Label prefHeight="110.0" prefWidth="882.0" text=" Add Librarian" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <padding>
+            <Insets bottom="20.0" left="50.0" right="50.0" top="30.0" />
+         </padding>
+      </Label>
+      <HBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="880.0">
+         <children>
+            <Pane prefHeight="59.0" prefWidth="61.0" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="880.0">
+         <children>
+            <Label prefHeight="40.0" prefWidth="231.0" text="Name" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="userName" prefHeight="38.0" prefWidth="299.0" style="-fx-background-color: rgba(0,0,0); -fx-border-width: 0 0 3 0; -fx-border-color: gray;" styleClass="text-input" stylesheets="@style.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="880.0">
+         <children>
+            <Label prefHeight="35.0" prefWidth="235.0" text=" Email" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="59.0" prefWidth="0.0" />
+            <TextField fx:id="email" prefHeight="25.0" prefWidth="299.0" style="-fx-background-color: rgba(0,0,0); -fx-border-color: gray; -fx-border-width: 0 0 3 0;" styleClass="text-input" stylesheets="@style.css" />
+            <Label fx:id="emailValidation" prefHeight="20.0" prefWidth="302.0" textFill="#f25151">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="53.0" prefWidth="880.0">
+         <children>
+            <Label prefHeight="35.0" prefWidth="235.0" text="National ID" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="nationalID" prefHeight="25.0" prefWidth="299.0" style="-fx-background-color: rgba(0,0,0); -fx-border-color: gray; -fx-border-width: 0 0 3 0;" styleClass="text-input" stylesheets="@style.css" />
+            <Label fx:id="nationalIdValidation" prefHeight="20.0" prefWidth="302.0" textFill="#f25151">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="53.0" prefWidth="880.0">
+         <children>
+            <Label prefHeight="35.0" prefWidth="235.0" text="Mobile Number" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="mobile" prefHeight="25.0" prefWidth="299.0" style="-fx-background-color: rgba(0,0,0); -fx-border-color: gray; -fx-border-width: 0 0 3 0;" styleClass="text-input" stylesheets="@style.css" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="53.0" prefWidth="880.0">
+         <children>
+            <Label prefHeight="35.0" prefWidth="235.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="password" prefHeight="25.0" prefWidth="299.0" style="-fx-background-color: rgba(0,0,0); -fx-border-color: gray; -fx-border-width: 0 0 3 0;" styleClass="text-input" stylesheets="@style.css" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="189.0" prefWidth="880.0">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#addButton" prefHeight="0.0" prefWidth="214.0" style="-fx-background-radius: 90; -fx-background-color: #60e464;" text="Add " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="-10.0" />
+               </HBox.margin>
+            </Button>
+            <Label fx:id="errorMassageButton" alignment="CENTER" prefHeight="42.0" prefWidth="234.0" textFill="#f25151">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="75.0" right="50.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarysystem.UpdateLibrarianPageController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="74.0" prefWidth="880.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="344.0" style="-fx-background-color: #C0C0C0; -fx-background-radius: 90; -fx-border-width: 3 3 3 3; -fx-border-radius: 90; -fx-border-color: #60e464;" stylesheets="@style.css">
+               <children>
+                  <TextField fx:id="userInputCode" prefHeight="39.0" prefWidth="271.0" promptText="search" style="-fx-background-color: #C0C0C0; -fx-border-radius: 90; -fx-background-radius: 90; -fx-text-inner-color: black;" styleClass="text-input" stylesheets="@style.css">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#searchButton" style="-fx-background-color: #C0C0C0;">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="35.0" onDragDetected="#searchButton" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/search-black.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="210.0" />
+               </HBox.margin>
+            </HBox>
+            <Label fx:id="errorMassageSearch" alignment="TOP_CENTER" prefHeight="26.0" prefWidth="229.0" textFill="#ec4b4b">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets top="25.0" />
+         </padding>
+      </HBox>
+      <Label fx:id="errorMassage1" prefHeight="40.0" prefWidth="222.0" textFill="#ec4b4b">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="51.0" prefWidth="423.0">
+         <children>
+            <Label prefHeight="35.0" prefWidth="200.0" text="Name" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Pane prefHeight="62.0" prefWidth="32.0" />
+            <TextField fx:id="name" prefHeight="39.0" prefWidth="297.0" style="-fx-background-color: rgba(0,0,0); -fx-border-width: 0 0 3 0; -fx-border-color: gray;" styleClass="text-input" stylesheets="@style.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="51.0" prefWidth="423.0">
+         <children>
+            <Label prefHeight="35.0" prefWidth="200.0" text="NationalID" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Pane prefHeight="62.0" prefWidth="32.0" />
+            <TextField fx:id="nationalId" prefHeight="39.0" prefWidth="297.0" style="-fx-background-color: rgba(0,0,0); -fx-border-width: 0 0 3 0; -fx-border-color: gray;" styleClass="text-input" stylesheets="@style.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="51.0" prefWidth="423.0">
+         <children>
+            <Label prefHeight="35.0" prefWidth="200.0" text="email" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Pane prefHeight="62.0" prefWidth="32.0" />
+            <TextField fx:id="email" prefHeight="39.0" prefWidth="297.0" style="-fx-background-color: rgba(0,0,0); -fx-border-width: 0 0 3 0; -fx-border-color: gray;" styleClass="text-input" stylesheets="@style.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="51.0" prefWidth="423.0">
+         <children>
+            <Label prefHeight="35.0" prefWidth="200.0" text="Mobile number" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Pane prefHeight="62.0" prefWidth="32.0" />
+            <TextField fx:id="mobilenum" prefHeight="39.0" prefWidth="297.0" style="-fx-background-color: rgba(0,0,0); -fx-border-width: 0 0 3 0; -fx-border-color: gray;" styleClass="text-input" stylesheets="@style.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="51.0" prefWidth="423.0">
+         <children>
+            <Label prefHeight="35.0" prefWidth="200.0" text="password" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Pane prefHeight="62.0" prefWidth="32.0" />
+            <TextField fx:id="password" prefHeight="39.0" prefWidth="297.0" style="-fx-background-color: rgba(0,0,0); -fx-border-width: 0 0 3 0; -fx-border-color: gray;" styleClass="text-input" stylesheets="@style.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" prefHeight="173.0" prefWidth="880.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#updateLib" prefHeight="46.0" prefWidth="182.0" style="-fx-background-radius: 90; -fx-background-color: #60e464;" text="Update " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="updateMassage" prefHeight="53.0" prefWidth="258.0" textFill="#ec4b4b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#deleteLib" prefHeight="46.0" prefWidth="182.0" style="-fx-background-radius: 90; -fx-background-color: red;" text="Delete " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="deleteMassage" prefHeight="30.0" prefWidth="257.0" textFill="#ec4b4b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>
